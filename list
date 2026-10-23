@@ -1,0 +1,392 @@
+# # l=[1,2,3,4]
+# # print(l)
+# # print(type(l))
+
+# # l1=[1,23,34,45]
+# # l2=[34.56,67,78]
+# # print(l1+l2)
+# # print(l1*2)
+# # print(1 in l1)
+# # print(1 not in l1)
+
+# # fru=["apple","orange"]
+# # print(fru)
+# # print(len(fru))
+
+# # print(list("ashish"))
+# # l=[10,20,30,40]
+# # print(l[1])
+# # print(l[:3])
+
+# l=[100,120,130,140]
+# # for i in l:
+# #     print(i)
+# for i in range(len(l)):
+#     print(i)
+#     print(l[i])
+
+
+
+# adding items
+
+# apppend
+
+# l=[1,2,3,4,5]
+# l.append(6)
+# print(l)
+# l.append("ash")
+# print(l)
+
+# insert
+
+# n=[1,2,3,4]
+# n.insert(2,5)
+# n.insert(-1,5)
+# n.insert(10,"ash")
+# print(n)
+
+# extend
+
+# a=[1,2,3]
+# b=[4,5,6]
+# a.extend(b)
+# print(a)
+
+# a=[1,2,3]
+# a.extend("hai")           string
+# # a.extend((2,3))         tuple
+# print(a)
+
+
+# remove 
+
+# a=[1,2,3,4,5,2]
+# a.remove(2)
+# print(a)
+
+
+# pop
+# l=[1,2,3,4,5]
+# e=l.pop(2)
+# print(l)
+# print(e)
+
+
+# clear
+
+# a=[1,2,3,4]
+# a.clear()
+# print(a)
+
+# searching
+
+# l=[1,2,3,4,2]
+# print(l.index(2))
+# print(l.index(3,1,4))
+# # print(l.index(9))
+
+
+# count
+# l=[1,2,3,4,5,2]
+# print(l.count(2))
+# print(l.count(7))
+
+# sort
+
+# a=[10,5,6,27,47,89]
+# a.sort()                      assending
+# print(a)
+# a.sort(reverse=True)          desending
+# print(a)
+
+# a=["hai","hi","hello"]
+# a.sort(key=len)
+# print(a)
+
+
+# reverse
+
+# a=[1,2,4,3,4,5]
+# a.reverse()
+# print(a)
+
+
+# copy
+
+# a=[1,2,3,4]
+# b=a.copy()
+# print(b)
+
+# l=[]
+# for i in range(10):
+#     n=int(input("enter a num"))
+#     l.append(n)
+# print(l)
+
+# list=[1,2,3]
+# list.append(4)
+# print(list)
+
+# l=[1,2,3,4]
+# l.remove(4)
+# print(l)
+
+# a=[3,4,1,2]
+# a.sort()
+# print(a)
+
+
+# a=[1,2,3,4,5]
+# l=len(a)
+# print(l)
+
+# l=[10,20,30,40]
+# print (l.index(20))
+
+# l=[1,2,3,4]
+# l.reverse()
+# print(l)
+
+# a=[1,2,3]
+# b=[4,5,6]
+# a.extend(b)
+# print(a)
+
+# a=[1,2,3,4]
+# print(a.count(2))
+
+# a=[1,2,3,4]
+# a.insert(3,2)
+# print(a)
+
+# a=[1,2,3,4,5]
+# a.pop(2)
+# print(a)
+
+# l=[1,2,3]
+# l.clear()
+# print(l)
+
+# l=[1,2,3,4,5]
+# print(max(l))
+
+# l=[1,2,3,4,5]
+# print(min(l))
+
+# l=[0,1,2,3,4,5]
+# print(l[2:4])
+
+# l=[1,2]
+# k=[3,4,5]
+# print(l+k)
+
+# l=[1,2,3,4]
+# print(3 in l)
+
+# l=[11,2,3,4,2]
+# print(l.index(2))
+
+# l=[1,2,3,4]
+# s=[]
+# for i in l:
+#     s.append(i**2)
+# print(s)
+
+
+# LIST COMPREHENSION
+# SIMPL WAY TO CREATE ANEW LIST  FROM AN EXICTING 
+# n=[1,2,3,4]
+# s=[i**2 for i in n]
+# print(s)
+
+
+# k=[i**2 for i in range(1,11)if i%2==0]
+# print(k)
+
+# k=["even"if i%2==0 else "odd" for i in range(1,11)]
+# print(k)
+
+# l=[i for i in range(1,21)if i%2==0]
+# print(l)
+
+# l=["apple","mango","orange"]
+# k=[i.upper() for i in l]
+# print(k)
+
+# l= "my name is ash"
+# k=[i for i in l if i=="a" or i=="e" or i=="i" or i=="o" or i=="u" ]
+# print(k)
+
+# k="my name is ash"
+# j=k.split()
+# l=[i[0] for i in j ]
+# print(l)
+
+# l=[1,2,3,-4,-4]
+# k=[i for i in l if i>0]
+# print(k)
+
+
+# # l=[1,2,3,-4,-4]
+# k=[0 if i<0 else i for i in l   ]
+# print(k)
+
+# k=[(i,i**2) for i in range(1,11)]
+# print(k)
+
+# k=[i for i in range(1,100) if i%3==0 and i%5==0]
+# print(k)
+
+# a=[1,2,3]
+# b=[4,5,6]
+# k=[(i,j)  for i in a  for j in b ]
+# print(k)
+
+# j="my namee is ash"
+# l=j.split()
+# k=[i for i in l if len(i)>4 ]
+# print(k)
+
+# w=["apple","banana","orange"]
+# l=[len(word) for word in w]
+# print(l)
+
+# n=[1,2,3,4,5,6]
+# s=[i**2 for i in n if i%2!=0]
+# print(s)
+
+# p=[i for i in range(2,51) if all(i%j!=0 for j in range(2,i))]
+# print(p)
+
+# w=["apple","orange2","mango"]
+# r=[i for i in w if i.isalpha() ]
+# print(r)
+
+# w="name is ash"
+# f=[i for i in w if w.count(i)==1 and i!=" "]
+# print(f)
+
+# LIST OF list
+
+# g=[1,2,3],[4,5,6],[7,8,9]
+# # print(g)
+# for i in g:
+#     for j in i:
+#         print(j,end=" ")
+#     print()
+
+# g=[10,20,30,[100,200,[5000,6000],300,400,500],40,50]
+# print(g[3][0])
+# print(g[3][2])
+# print(g[3][2][1])
+# g[3][2].append(7000)
+# print(g)
+
+# g=[1,2,3],[4,5,6],[7,8,9]
+# d=[9,8,7],[6,5,4],[3,2,1]
+# res=[]
+# for i in range (len(g)):
+#     for j in range (len(g[0])):
+#         res.append(g[i][j] + d[i][j])
+# print(res)
+
+# mat=[]
+# r=int(input("enter a numb"))
+# c=int(input("enter a numb"))
+# for i in range (r):
+#     sun=[]
+#     for j in range (c):
+#         u=int(input("enter the values"))
+#         sun.append(u)
+#     mat.append(sun)
+# print(mat)
+# mat1=[]
+# r1=int(input("enter a numb"))
+# c1=int(input("enter a numb"))
+# for i in range (r1):
+#     sun1=[]
+#     for j in range (c1):
+#         u1=int(input("enter the values"))
+#         sun1.append(u1)
+#     mat1.append(sun1)
+# print(mat1) 
+
+# result=[]
+# for i in range (r):
+#     res=[]
+#     for j in range (c):
+#         res.append(mat[i][j] + mat1[i][j])
+#     result.append(res)
+    
+# print(result)
+# for i in result:
+#     for j in i:
+#         print(j,end=" ")
+#     print()
+
+
+
+# mat=[]
+# r1=int(input("enter the number of rows"))
+# c1=int(input("enter the number of coloum"))
+# for i in range (r1):
+#     sun=[]
+#     for j in range (c1):
+#         u=int(input("enter the values"))
+#         sun.append(u)
+#     mat.append(sun)
+# print(mat)
+# mat1=[]
+# r2=int(input("enter a numb"))
+# c2=int(input("enter a numb"))
+# for i in range (r2):
+#     sun1=[]
+#     for j in range (c2):
+#         u1=int(input("enter the values"))
+#         sun1.append(u1)
+#     mat1.append(sun1)
+# print(mat1) 
+
+# result=[]
+# for i in range(r1):
+#     row=[]
+#     for j in range(c2):
+#         sum=0
+#         for k in range(c1):
+#             sum+=mat[i][k] * mat1[k][j]  
+#         row.append(sum)  
+#     result.append(row)
+# print(result)
+# for i in result:
+#     for j in i:
+#         print(j,end=" ")
+#     print()
+
+
+
+
+
+mat=[]
+r1=int(input("enter the number of rows"))
+c1=int(input("enter the number of coloum"))
+for i in range (r1):
+    sun=[]
+    for j in range (c1):
+        u=int(input("enter the values"))
+        sun.append(u)
+    mat.append(sun)
+print(mat)
+for i in mat:
+    for j in i:
+        print(j,end=" ")
+    print()
+transpose=[]
+for j in range(c1):
+    row=[]
+    for i in range(r1):
+        row.append(mat[i][j])
+    transpose.append(row)
+for i in transpose:
+    for j in i:
+        print(j,end=" ")
+    print()
